@@ -1,0 +1,315 @@
+/*   
+	Kubrick v1.0  for Xoops 2.0.x
+
+	This theme was designed by Michael Heilemann, whose blog you will find at binarybonsai.com.
+	It was ported to Xoops by kavaXtreme who can't be bothered with a proper blog, but has a site at kavaxtreme.radiantchristians.com.
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* Begin Structure */
+body {
+	margin: 0;
+	padding: 0;
+	background: #e7e7e7 url("images/kubrickbg.jpg");
+	color: #333;
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+	text-align: center;
+	}
+#page {
+	margin: 20px auto 20px auto;
+	padding: 0;
+	width: 760px;
+	text-align: left;
+	}
+#header {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 760px;
+	background: #48b url("images/kubrickheader.jpg") no-repeat bottom center;
+	height: 200px;
+	}
+#headerimg { margin: 0 50px 0 50px; background: url("images/mylogo.gif") no-repeat center right; height: 200px; }
+#content {
+	margin: 0;
+	padding: 30px 60px 20px 60px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	}
+#content.withsidebar {
+	float: left;
+	margin: 0;
+	padding: 30px 0 20px 45px;
+	width: 450px;
+	}
+#content.withoutsidebar { width: 640px; }
+#sidebar {
+	margin-left: 545px;
+	padding: 20px 0 0 0;
+	width: 190px;
+	background: #f9f9f9;
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+#sidebar form { margin: 0; }
+#footer {
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	clear: both;
+	background: #eee url("images/kubrickfooter.jpg") no-repeat bottom;
+	height: 63px;
+	}
+#footer p { margin: 0; padding: 20px 0 0 0; text-align: center; }
+/* End Structure */
+
+/* Begin Left Column */
+td#leftcolumn { width: 160px; }
+td#leftcolumn th { }
+td#leftcolumn div.blockTitle {
+	margin: 10px 0 5px 0;
+	padding: 0;
+	font: bold 1.2em 'Lucida Grande', Verdana, Sans-Serif;
+	}
+td#leftcolumn div.blockContent { margin: 0 0 0 10px; }
+/* End Left Column */
+
+/* Begin Center Column */
+td#centercolumn { }
+td#centercolumn th { color: #fff; background: #48b; vertical-align: middle; }
+
+td#centerCcolumn { padding: 0 3px 1px 3px; }
+td#centerCcolumn div.blockTitle {
+	margin: 0 0 10px 0;
+	font: bold 1.6em 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+td#centerCcolumn div.blockContent { margin: 0 0 20px 0; }
+
+td#centerLcolumn { width: 50%; padding: 0 3px 0 0; }
+td#centerLcolumn div.blockTitle {
+	margin: 0 0 10px 0;
+	font: bold 1.6em 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+td#centerLcolumn div.blockContent { margin: 0 0 20px 0; }
+
+td#centerRcolumn { width: 50%; padding: 0px 3px 0px 0px; }
+td#centerRcolumn div.blockTitle {
+	margin: 0 0 10px 0;
+	font: bold 1.6em 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+td#centerRcolumn div.blockContent { margin: 0 0 20px 0; }
+/* End Center Column */
+
+/* Begin Right Column */
+td#rightcolumn { width: 160px; }
+td#rightcolumn th { }
+td#rightcolumn div.blockTitle {
+	margin: 10px 0 5px 0;
+	padding: 0;
+	font: bold 1.2em 'Lucida Grande', Verdana, Sans-Serif;
+	}
+td#rightcolumn div.blockContent { margin: 0 0 0 10px; }
+/* End Right Column */
+
+/* Begin Menus */
+td#mainmenu { margin: 0; }
+td#mainmenu a:before { content: url(images/menubullet.gif); }
+td#mainmenu a:hover { }
+td#mainmenu a.menuTop { padding-left: 3px; }
+td#mainmenu a.menuMain { padding-left: 3px; }
+td#mainmenu a.menuSub { padding-left: 9px; }
+
+td#usermenu { margin: 0; }
+td#usermenu a:before { content: url(images/menubullet.gif); }
+td#usermenu a:hover { }
+td#usermenu a.menuTop { padding-left: 3px; }
+td#usermenu a.highlight { background: #fcc; }
+/* End Menus */
+
+/* Begin Lists */
+html>body ul {
+	list-style: none;
+	text-indent: -12px;
+	}
+ul li:before {
+	content: "\00BB \0020";
+	}
+ul {
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 12px;
+	} 
+li {
+	margin: 7px 0 8px 10px;
+	}
+/* End Lists */
+	
+/* Begin Headers */
+h1, h2, h3, h4 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+h1 {
+	padding-top: 70px;
+	margin: 0;
+	font-size: 4em;
+	text-align: center;
+	}
+h2 { margin: 30px 0 10px 0; font-size: 1.6em; }
+h2.pagetitle { text-align: center; }
+#sidebar h2 {
+	margin: 5px 0 0 0;
+	padding: 0;
+	font: 1.2em 'Lucida Grande', Verdana, Sans-Serif;
+	}
+h3 { padding: 0; margin: 30px 0 0; font-size: 1.3em; }
+h1, h1 a, h1 a:hover, h1 a:visited, .description { color: white; text-decoration: none; }
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited { color: #333; }
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, cite { text-decoration: none; }
+a, h2 a:hover, h3 a:hover { color: #06c; text-decoration: none; }
+a:hover { color: #147; text-decoration: underline; }
+.description { font-size: 1.2em; text-align: center; }
+acronym, abbr, span.caps { font-size: 0.9em; letter-spacing: .07em; }
+/* End Headers */
+
+/* Begin System Messages */
+div.errorMsg {
+	border-top: 1px solid #ddf;
+	border-left: 10px solid #48b;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding: 10px;
+	width: 75%;
+	background: #fcc;
+	font-weight: bold;
+	text-align: center;
+	}
+div.confirmMsg {
+	border-top: 1px solid #ddf;
+	border-left: 10px solid #48b;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding: 10px;
+	width: 75%;
+	color: #136C99;
+	background: #ddffdf;
+	font-weight: bold;
+	text-align: center;
+	}
+div.resultMsg {
+	border-top: 1px solid silver;
+	border-left: 10px solid #48b;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	padding: 10px;
+	width: 75%;
+	color: #333;
+	background: #f9f9f9;
+	font-weight: bold;
+	text-align: center;
+	}
+/* End System Messages */
+	
+/* Begin Posts */
+div.xoopsCode {
+	border: 1px inset #000;
+	padding: 6px;
+	background: #e7e7e7;
+	font-family: "Courier New",Courier,monospace;
+	}
+div.xoopsQuote { font-style: italic; }
+/* End Posts */
+
+/* Begin Other */
+table { width: 100%; }
+table td { padding: 0; border-width: 0; vertical-align: top; }
+th {
+	padding: 2px;
+	color: #fff;
+	background: #48b;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	}
+tr.even td { padding: 5px; background: #f8f8f8; }
+tr.odd td { padding: 5px; background: #fff; }
+
+.outer { }
+.head { padding: 5px; background: #6ae; font-weight: bold; }
+.even { padding: 5px; background: #fff; }
+.odd { padding: 5px; background: #f8f8f8; }
+.foot { padding: 5px; background: #f8f8f8; font-weight: bold; }
+
+.item { }
+.itemHead { padding: 3px; }
+.itemInfo { padding: 3px; text-align: right; }
+.itemTitle a {
+	margin: 30px 0 10px 0;
+	color: #000;
+	font: bold 1.6em 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+.itemPoster { font-size: 90%; font-style: italic; }
+.itemPostDate { font-size: 90%; font-style: italic; }
+.itemStats { font-size: 90%; font-style: italic; }
+.itemBody { padding-left: 5px; }
+.itemText {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.5em;
+	}
+.itemText:first-letter { }
+.itemFoot { padding: 3px; text-align: right; }
+.itemAdminLink { font-size: 90%; }
+.itemPermaLink { font-size: 90%; }
+/* End Other */
+
+/* Begin NewBB */
+#com_text { width: 100%; }
+.comTitle { margin-bottom: 2px; font-weight: bold; }
+.comText { padding: 2px; }
+.comUserStat {
+	border: 1px solid silver;
+	margin: 2px;
+	padding: 2px;
+	color: #2f5376;
+	background: #fff;
+	font-size: 10px;
+	font-weight: bold;
+	}
+.comUserStatCaption { font-weight: normal; }
+.comUserStatus {
+	margin-left: 2px;
+	margin-top: 10px;
+	color: #2f5376;
+	font-weight: bold;
+	font-size: 10px;
+	}
+.comUserRank { margin: 2px; }
+.comUserRankText { font-size: 10px; font-weight: bold; }
+.comUserRankImg { border: 0; }
+.comUserName { }
+.comUserImg { margin: 2px; }
+.comDate {
+	font-weight: normal;
+	font-style: italic;
+	font-size: smaller;
+	}
+.comDateCaption { font-weight: bold; font-style: normal; }
+ul.newbb_level1, ul.newbb_level2, ul.newbb_level3 {
+	width: 140px;		/* Width of the Dropdownmenu Title and Menu themself */
+	background: #e7e7e7;	/* Main Background of the Menu Folder */
+	text-indent: 0;
+	}
+li.newbb_folder {
+	border: 1px solid #48b;	/* Should be the same color as above */
+	color: #fff; 		/* Textcolor of the Dropdownmenu Title */
+	background: #48b;
+	}
+li.newbb_folder:before {
+	content: "";
+	}
+.newbb_link:hover {
+	color: #fff  		
+	!important;		/* Hover Color of the Links */
+	}
+/* End NewBB */	
